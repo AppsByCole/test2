@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/appsbycole.com/static/js/main.70b57252.js",
-    "index.html": "/appsbycole.com/index.html",
-    "main.70b57252.js.map": "/appsbycole.com/static/js/main.70b57252.js.map"
+    "main.js": "/static/js/main.70b57252.js",
+    "index.html": "/index.html",
+    "main.70b57252.js.map": "/static/js/main.70b57252.js.map"
   },
   "entrypoints": [
     "static/js/main.70b57252.js"

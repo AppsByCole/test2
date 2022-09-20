@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .block {
+    @apply
+      bg-neutral-700
+      shadow-lg
+  }
+
+  .card {
+    @apply
+      bg-neutral-700
+      p-3
+      rounded-md
+      shadow-lg
+  }
+
+  .filler {
+    @apply 
+      flex
+      h-screen
+  } 
+  
+   .header {
+     @apply 
+       bg-white 
+       dark:bg-neutral-900
+       flex
+       h-16
+       shadow-lg
+       w-screen
+   }
+
+  .main {
+    @apply 
+      flex
+      flex-col
+      h-screen
+   } 
+
+   .screen {
+    @apply
+    flex 
+    flex-1 
+   }
+
+   .screen-centered {
+    @apply
+    flex 
+    flex-1 
+    items-center 
+    justify-center
+   }
+
+  .sidebar-left {
+    @apply 
+      bg-white 
+      dark:bg-neutral-900    
+      h-16 
+      shadow-lg
+      w-screen 
+      flex 
+      flex-col
+  }
+  
+  .sidebar-icon {
+    @apply 
+      cursor-pointer 
+      dark:bg-neutral-700
+      duration-300 
+      ease-linear
+      flex 
+      h-12 
+      hover:bg-red-900
+      hover:rounded-xl 
+      hover:text-white
+      items-center 
+      justify-center 
+      mb-2 
+      mt-2 
+      mx-auto  
+      relative 
+      rounded-md
+      shadow-lg
+      text-red-900
+      transition-all 
+      w-12 
+  }
+    
+  .sidebar-tooltip {
+    @apply 
+      absolute 
+      bg-neutral-700 
+      duration-300 
+      font-bold 
+      left-14 
+      m-2 
+      min-w-max 
+      origin-left 
+      p-2 
+      rounded-md 
+      scale-0 
+      select-none
+      shadow-md
+      text-white 
+      text-xs 
+      transition-all 
+      w-auto 
+  }
+}
+
+body {
+    @apply
+    bg-zinc-800
+    text-gray-100
+}
+
+button {
+  @apply
+  bg-red-900  
+  duration-300 
+  ease-linear
+  font-semibold
+  hover:bg-neutral-800
+  hover:rounded-md
+  p-2
+  rounded-xl
+  select-none
+  shadow-2xl
+  text-white
+  transition-all
+  w-fit
+}

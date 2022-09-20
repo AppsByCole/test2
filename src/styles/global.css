@@ -25,12 +25,14 @@
   
    .header {
      @apply 
-       bg-white 
-       dark:bg-neutral-900
-       flex
-       h-16
-       shadow-lg
-       w-screen
+      bg-neutral-900
+      flex
+      h-16
+      items-center
+      justify-evenly 
+      px-2
+      shadow-lg
+      w-screen
    }
 
   .main {
@@ -80,7 +82,7 @@
       justify-center 
       mb-2 
       mt-2 
-      mx-auto  
+      /* mx-auto   */
       relative 
       rounded-md
       shadow-lg
@@ -95,7 +97,6 @@
       bg-neutral-700 
       duration-300 
       font-bold 
-      left-14 
       m-2 
       min-w-max 
       origin-left 

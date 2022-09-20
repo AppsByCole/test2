@@ -1,22 +1,26 @@
 import {BsPlus, BsFillLightningFill} from 'react-icons/bs'
 import {FaFire, FaPoo} from 'react-icons/fa'
+import {HiMenu} from 'react-icons/hi'
+import {MdPerson} from 'react-icons/md'
 
 export default function Header() {
   return (
     <div className='header'>
-      <HeaderIcon icon={<FaFire size='28' />} text='Fire' />
-      <HeaderIcon icon={<BsPlus size='32' />} text='Plus' />
-      <HeaderIcon icon={<BsFillLightningFill size='20' />} text='Lightning' />
-      <HeaderIcon icon={<FaPoo size='20' />} text='Poop' />
+      <div className='sidebar-icon group'>
+        <HiMenu size='28' />
+        <span  className='sidebar-tooltip left-12 group-hover:scale-100'>
+          Navigation Menu
+        </span>
+      </div>
+      
+      <p className='text-4xl flex-1 text-center'>Apps By Cole</p>
+
+      <div className='sidebar-icon group'>
+        <MdPerson size='28' />
+        <span  className='sidebar-tooltip right-12 group-hover:scale-100'>
+          User Options
+        </span>
+      </div>
     </div>
   )
 }
-
-const HeaderIcon = ({icon, text})=> (
-  <div className='sidebar-icon group'>
-    {icon}
-    <span  className='sidebar-tooltip group-hover:scale-100'>
-      {text}
-    </span>
-  </div>
-)

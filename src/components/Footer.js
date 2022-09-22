@@ -13,11 +13,11 @@ export default function Footer() {
 
   return (
     <div className='header'>
-      <a href='/resume' onClick={handleResume}>Resume</a>
+      <a className='link' href='/resume' onClick={handleResume}>Resume</a>
       <span>{"-"}</span>
-      <a href='*' onClick={handleContact}>Contact Me</a>
+      <a className='link' href='*' onClick={handleContact}>Contact Me</a>
       <span>{"-"}</span>
-      <a href="https://github.com/AppsByCole">GitHub</a>
+      <a className='link' href="https://github.com/AppsByCole">GitHub</a>
     </div>
   )
 }

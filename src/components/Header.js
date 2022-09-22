@@ -19,7 +19,7 @@ export default function Header() {
       </div>
       
       <a 
-      className='flex-1 select-none text-4xl text-center'
+      className='flex-1 select-none text-4xl text-center link'
       href='/' 
       onClick={handleGoHome}
       >

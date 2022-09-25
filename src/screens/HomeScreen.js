@@ -5,7 +5,7 @@ import SkillsBlock from './../components/SkillsBlock';
 
 export default function HomeScreen() {
   return (
-    <div className='screen'>
+    <div className='screen snap-y snap-mandatory'>
 
       <HeroBlock />
 

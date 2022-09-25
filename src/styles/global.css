@@ -105,6 +105,12 @@
     noscroll
     overflow-auto 
    }
+
+  .snappy {
+    @apply
+    snap-center
+    snap-normal
+  }
 }
 
 body {

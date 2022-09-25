@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function HeroBlock() {
   return (
-    <div className='h-full flex flex-col items-center justify-evenly'>
+    <div className='h-full flex flex-col items-center justify-evenly snappy'>
 
       <div className='h-1/5' />
 

@@ -8,16 +8,22 @@ export default function Footer() {
   }
 
   const handleContact = () => {
-    navigate('*')
+    navigate('/contact')
   }
 
   return (
-    <div className='header'>
-      <a className='link' href='/resume' onClick={handleResume}>Resume</a>
+    <div className='header justify-evenly select-none'>
+
+      <a className='link' onClick={handleResume}>Resume</a>
+
       <span>{"-"}</span>
-      <a className='link' href='*' onClick={handleContact}>Contact Me</a>
+      
+      <a className='link' onClick={handleContact}>Contact Me</a>
+
       <span>{"-"}</span>
+
       <a className='link' href="https://github.com/AppsByCole">GitHub</a>
+
     </div>
   )
 }

@@ -10,6 +10,12 @@
     rounded-md
     shadow-lg
   }
+
+  .center {
+    @apply
+    items-center
+    justify-center
+  }
   
   .header {
      @apply 
@@ -17,7 +23,7 @@
     flex
     h-16
     items-center
-    justify-evenly 
+    justify-between 
     px-2
     shadow-lg
     w-screen
@@ -69,6 +75,7 @@
 
   .link {
     @apply
+    cursor-pointer
     duration-200
     ease-linear
     hover:text-red-900
@@ -84,16 +91,19 @@
 
    .screen {
     @apply
-    flex 
-    flex-1 
+    h-full 
+    noscroll
+    overflow-auto 
    }
 
    .screen-centered {
     @apply
-    flex 
-    flex-1 
+    flex
+    h-full 
     items-center 
     justify-center
+    noscroll
+    overflow-auto 
    }
 }
 
@@ -118,4 +128,8 @@ button {
   text-white
   transition-all
   w-fit
+}
+
+.noscroll::-webkit-scrollbar {
+  display: none;
 }

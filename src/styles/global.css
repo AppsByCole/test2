@@ -10,7 +10,7 @@
     rounded-md
     shadow-lg
   }
-
+  
   .center {
     @apply
     items-center
@@ -18,7 +18,7 @@
   }
   
   .header {
-     @apply 
+    @apply 
     bg-neutral-900
     flex
     h-16
@@ -27,8 +27,8 @@
     px-2
     shadow-lg
     w-screen
-   }
-
+  }
+  
   .header-icon {
     @apply 
     cursor-pointer 
@@ -51,7 +51,7 @@
     transition-all 
     w-12 
   }
-    
+  
   .header-tooltip {
     @apply 
     absolute 
@@ -72,7 +72,7 @@
     transition-all 
     w-auto 
   }
-
+  
   .link {
     @apply
     cursor-pointer
@@ -81,22 +81,22 @@
     hover:text-red-900
     transition-all
   }
-
+  
   .main {
     @apply 
     flex
     flex-col
     h-screen
-   } 
-
-   .screen {
+  } 
+  
+  .screen {
     @apply
     h-full 
     noscroll
     overflow-auto 
-   }
-
-   .screen-centered {
+  }
+  
+  .screen-centered {
     @apply
     flex
     h-full 
@@ -104,14 +104,35 @@
     justify-center
     noscroll
     overflow-auto 
-   }
-
+  }
+ 
+  .section {
+    @apply
+    flex
+    h-full
+    overflow-auto
+    max-h-full
+    p-2 
+    screen 
+    snappy
+  }
+  
+  .skills {
+    @apply
+    bg-neutral-500
+    h-24
+    p-2 
+    rounded-lg
+    w-24
+  }
+  
   .snappy {
     @apply
     snap-center
     snap-normal
   }
 }
+
 
 body {
   @apply

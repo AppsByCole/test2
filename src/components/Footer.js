@@ -14,11 +14,11 @@ export default function Footer() {
   return (
     <div className='header justify-evenly select-none'>
 
-      <a className='link' onClick={handleResume}>Resume</a>
+      <a className='link' href='/resume' onClick={handleResume}>Resume</a>
 
       <span>{"-"}</span>
       
-      <a className='link' onClick={handleContact}>Contact Me</a>
+      <a className='link' href='/contact' onClick={handleContact}>Contact Me</a>
 
       <span>{"-"}</span>
 

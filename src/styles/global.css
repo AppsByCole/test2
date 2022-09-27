@@ -120,9 +120,15 @@
   .skills {
     @apply
     bg-neutral-500
+    duration-300 
+    ease-linear
+    hover:bg-neutral-400
+    hover:shadow-2xl
+    hover:mb-2
     h-24
     p-2 
     rounded-lg
+    shadow-md
     w-24
   }
   
@@ -132,7 +138,6 @@
     snap-normal
   }
 }
-
 
 body {
   @apply

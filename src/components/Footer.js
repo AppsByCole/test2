@@ -22,7 +22,7 @@ export default function Footer() {
 
       <span>{"-"}</span>
 
-      <a className='link' href="https://github.com/AppsByCole">GitHub</a>
+      <a className='link' href="https://github.com/AppsByCole" rel="noreferrer" target='_blank'>GitHub</a>
 
     </div>
   )

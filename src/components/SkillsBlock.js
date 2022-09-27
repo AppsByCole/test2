@@ -3,15 +3,21 @@ import React from 'react'
 export default function SkillsBlock() {
   return (
     <div className=' bg-neutral-700 flex-col section'>
-      <p className='text-6xl text-center'>My Skills</p>
+
+      <p className='text-6xl text-center mb-1'>My Skills</p>
 
       <div className='flex flex-row flex-wrap h-full justify-evenly'>
         {skillIcons.map(item => (
-          <div className='flex md:w-1/4 md:h-1/4 center'>
+          <div className='flex center mx-1 w-1/5'>
+
             <div>
+
               <img alt={item.name} className='skills' src={item.source} />
+
               <p className='text-center'>{item.name}</p>
+
             </div>
+
           </div>
         ))}
       </div>

@@ -16,6 +16,21 @@
     items-center
     justify-center
   }
+
+  .form {
+    @apply
+    flex
+    flex-col
+    select-none
+  }
+
+  .formItem {
+    @apply  
+    flex
+    items-center
+    justify-between
+    m-2
+  }
   
   .header {
     @apply 
@@ -136,6 +151,18 @@
     @apply
     snap-center
     snap-normal
+  }
+
+  .textInput {
+    @apply
+    bg-slate-200 
+    ml-2
+    p-2
+    w-52
+    rounded-md
+    select-none
+    shadow-lg
+    text-gray-800
   }
 }
 

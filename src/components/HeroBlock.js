@@ -21,7 +21,7 @@ export default function HeroBlock() {
       <span 
         className='
         lg:text-lg  md:pr-80 select-none sm:text-md md:w-7/12 sm:w-8/12 text-center'>
-        If you though this would be serious, then you don't know anything about me. But coming here is a good start.
+        If you thought this would be serious, then you don't know anything about me. But coming here is a good start.
       </span>
 
       <div className='h-1/6' />

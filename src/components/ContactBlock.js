@@ -3,7 +3,31 @@ import React from 'react'
 export default function ContactBlock() {
   return (
     <div className='bg-neutral-700 flex flex-col h-full items-center justify-center p-2 screen snappy'>
-      <p>Contact Block</p>
+      <p>Contact Me</p>
+
+      <form className='form'>
+
+        <span className='formItem'>
+          <label for='firstName'>First Name</label>
+          <input className='textInput' id='firstName' name='firstName' type='text' />
+        </span>
+
+        <span className='formItem'>
+          <label for='Company'>Company</label>
+          <input className='textInput'id='company' name='company'  type='text' />
+        </span>
+
+        <span className='formItem'>
+          <label for='Email'>Email</label>
+          <input className='textInput'id='email' name='email'  type='email' />
+        </span>
+
+        <span className='formItem'>
+          <label for='body'>Body</label>
+          <textarea className='textInput h-96'id='body' name='body'  type='text' />
+        </span>
+
+      </form>
     </div>
   )
 }

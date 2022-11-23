@@ -190,5 +190,5 @@ button {
 }
 
 .noscroll::-webkit-scrollbar {
-  display: none;
+  display: none
 }

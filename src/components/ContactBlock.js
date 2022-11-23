@@ -5,7 +5,7 @@ export default function ContactBlock() {
     <div className='bg-neutral-700 flex flex-col h-full items-center justify-center p-2 screen snappy'>
       <p>Contact Me</p>
 
-      <form className='form'>
+      <form className='card bg-neutral-500 form'>
 
         <span className='formItem'>
           <label for='firstName'>First Name</label>

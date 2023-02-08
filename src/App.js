@@ -6,6 +6,7 @@ import Header from './components/Header'
 import HomeScreen from './screens/HomeScreen'
 import PageNotFoundScreen from './screens/PageNotFoundScreen'
 import ResumeScreen from './screens/ResumeScreen'
+import TestScreen from './screens/TestScreen'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomeScreen />} />
         <Route path='/contact' element={<ContactScreen />} />
+        <Route path='/test' element={<TestScreen />} />
         <Route path='/resume' element={<ResumeScreen />} />
         <Route path='*' element={<PageNotFoundScreen />} />
       </Routes>

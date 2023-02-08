@@ -153,6 +153,13 @@
     snap-normal
   }
 
+  .test {
+    @apply
+    bg-green-300
+    h-96
+    w-96
+  }
+
   .textInput {
     @apply
     bg-slate-200 

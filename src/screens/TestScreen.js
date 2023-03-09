@@ -1,12 +1,12 @@
-import { useState } from 'react'
-import TextScrambler from '../components/TextScrambler'
+import MouseChaser from '../components/MouseChaser'
 
 export default function TestScreen() {
-  const [sourceText, setSourceText] = useState('Necrosaint')
+  // const [sourceText, setSourceText] = useState('Necrosaint')
 
   return (
     <div className='screen-centered'>
-      <TextScrambler sourceText={sourceText}/>
+      {/* <TextScrambler sourceText={sourceText}/> */}
+      <MouseChaser />
     </div>
   )
 }

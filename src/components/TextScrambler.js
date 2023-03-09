@@ -7,12 +7,16 @@ export default function TextScrambler({sourceText, classNames}) {
   });
 
   const [toScramble, setToScramble] = useState(sourceText)
+  const [isScrambling, setIsScrambling] = useState(false)
 
-  let interval = (null)
+  let interval = null
 
-  const scramble = () => {
+  const scramble = () => {  
+    if (isScrambling) return
+    
+    setIsScrambling(true)
+
     let iteration = 0
-
     clearInterval(interval)
 
     interval = setInterval(() => {
@@ -27,7 +31,10 @@ export default function TextScrambler({sourceText, classNames}) {
 
       setToScramble(scrambledText)
 
-      if (iteration >= toScramble.length) clearInterval(interval)
+      if (iteration >= toScramble.length) {
+        clearInterval(interval)
+        setIsScrambling(false)
+      }
   
       iteration += 1 / 2
     }, 50)

@@ -103,6 +103,11 @@
     flex-col
     h-screen
   } 
+
+  .rotate {
+    animation: rotate 30s linear infinite;
+    transform-origin: center;
+  }
   
   .screen {
     @apply
@@ -177,6 +182,7 @@ body {
   @apply
   bg-zinc-800
   text-gray-100
+  overflow-hidden
 }
 
 button {
@@ -198,4 +204,16 @@ button {
 
 .noscroll::-webkit-scrollbar {
   display: none
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: scale(1, 1.5) rotate(180deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

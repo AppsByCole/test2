@@ -8,22 +8,22 @@ export default function ContactBlock() {
       <form className='card bg-neutral-500 form'>
 
         <span className='formItem'>
-          <label for='firstName'>First Name</label>
+          <label htmlFor='firstName'>First Name</label>
           <input className='textInput' id='firstName' name='firstName' type='text' />
         </span>
 
         <span className='formItem'>
-          <label for='Company'>Company</label>
+          <label htmlFor='Company'>Company</label>
           <input className='textInput'id='company' name='company'  type='text' />
         </span>
 
         <span className='formItem'>
-          <label for='Email'>Email</label>
+          <label htmlFor='Email'>Email</label>
           <input className='textInput'id='email' name='email'  type='email' />
         </span>
 
         <span className='formItem'>
-          <label for='body'>Body</label>
+          <label htmlFor='body'>Body</label>
           <textarea className='textInput h-96'id='body' name='body'  type='text' />
         </span>
 

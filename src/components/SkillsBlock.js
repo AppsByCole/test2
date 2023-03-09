@@ -8,7 +8,10 @@ export default function SkillsBlock() {
 
       <div className='flex flex-row flex-wrap h-full justify-evenly select-none'>
         {skillIcons.map(item => (
-          <div className='flex center mx-1 w-1/5'>
+          <div 
+            className='flex center mx-1 w-1/5'
+            key={item.name}
+          >
 
             <a className='group' href={item.link} rel="noreferrer" target='_blank'>
 
